@@ -1,0 +1,67 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CONSTRUCT	test_example.py	/^from construct import * # CONSTRUCT$/;"	i
+Construct	construct.py	/^class Construct(object):$/;"	c
+ENGINE	test_example.py	/^from engine import *    # SIMULATION ENGINE$/;"	i
+MEMORY	test_example.py	/^from memory import *    # MEMORY$/;"	i
+Memory	memory.py	/^class Memory(Construct):$/;"	c
+PE	test_example.py	/^from pe import *        # PE$/;"	i
+ProcessingElement	pe.py	/^class ProcessingElement(Construct):$/;"	c
+SIMULATION	test_example.py	/^from engine import *    # SIMULATION ENGINE$/;"	i
+SimulationEngine	engine.py	/^class SimulationEngine(object):$/;"	c
+__init__	construct.py	/^    def __init__(self, name):$/;"	m	class:Construct
+__init__	engine.py	/^    def __init__(self, value_aware):$/;"	m	class:SimulationEngine
+__init__	memory.py	/^    def __init__(self, name, store_time, load_time):$/;"	m	class:Memory
+__init__	pe.py	/^    def __init__(self, name, matmul8_time, add8_time):$/;"	m	class:ProcessingElement
+add8	pe.py	/^    def add8(self, inputs, outputs, arguments):$/;"	m	class:ProcessingElement
+add_connection	engine.py	/^    def add_connection(self, src_name, dst_name):$/;"	m	class:SimulationEngine
+add_construct	engine.py	/^    def add_construct(self, construct):$/;"	m	class:SimulationEngine
+add_input	construct.py	/^    def add_input(self, cid):$/;"	m	class:Construct
+add_output	construct.py	/^    def add_output(self, construct):$/;"	m	class:Construct
+all_command_empty	engine.py	/^    def all_command_empty(self):$/;"	m	class:SimulationEngine
+array	memory.py	/^import array$/;"	i
+array	pe.py	/^import array$/;"	i
+command_empty	construct.py	/^    def command_empty(self):$/;"	m	class:Construct
+command_ready	construct.py	/^    def command_ready(self):$/;"	m	class:Construct
+feed_command	construct.py	/^    def feed_command(self, command):$/;"	m	class:Construct
+feed_command	engine.py	/^    def feed_command(self, construct_name, command_list):$/;"	m	class:SimulationEngine
+get_cid	construct.py	/^    def get_cid(self):$/;"	m	class:Construct
+get_construct	engine.py	/^    def get_construct(self, construct_name):$/;"	m	class:SimulationEngine
+get_construct_list	engine.py	/^    def get_construct_list(self):$/;"	m	class:SimulationEngine
+get_crnt_time	construct.py	/^    def get_crnt_time(self):$/;"	m	class:Construct
+get_input_list	construct.py	/^    def get_input_list(self):$/;"	m	class:Construct
+get_output_list	construct.py	/^    def get_output_list(self):$/;"	m	class:Construct
+get_total_time	engine.py	/^    def get_total_time(self):$/;"	m	class:SimulationEngine
+ifmem	pe.py	/^    ifmem = Memory('ifmem', 80, 40)$/;"	v
+increment_time	construct.py	/^    def increment_time(self, op, inputs, outputs, arguments):$/;"	m	class:Construct
+kmem	pe.py	/^    kmem = Memory('kmem', 80, 40)$/;"	v
+load16	memory.py	/^    def load16(self, inputs, outputs, arguments):$/;"	m	class:Memory
+load8	memory.py	/^    def load8(self, inputs, outputs, arguments):$/;"	m	class:Memory
+make_file	utils.py	/^def make_file(name, size):$/;"	f
+matmul16	pe.py	/^    def matmul16(self, inputs, outputs, arguments):$/;"	m	class:ProcessingElement
+matmul8	pe.py	/^    def matmul8(self, inputs, outputs, arguments):$/;"	m	class:ProcessingElement
+mem	memory.py	/^    mem = Memory('mem', 80, 40)$/;"	v
+np	memory.py	/^import numpy as np$/;"	i
+np	pe.py	/^import numpy as np$/;"	i
+ofmem	pe.py	/^    ofmem = Memory('ofmem', 80, 40)$/;"	v
+os	memory.py	/^import os$/;"	i
+parse_command	construct.py	/^    def parse_command(self, command):$/;"	m	class:Construct
+pe	memory.py	/^    pe = Construct('pe')$/;"	v
+pe	pe.py	/^    pe = ProcessingElement('pe', 200, 20)$/;"	v
+pop_input	construct.py	/^    def pop_input(self, input_name):$/;"	m	class:Construct
+push_output	construct.py	/^    def push_output(self, output_name, value):$/;"	m	class:Construct
+run	engine.py	/^    def run(self):$/;"	m	class:SimulationEngine
+run_command	construct.py	/^    def run_command(self, op, inputs, outputs, arguments):$/;"	m	class:Construct
+run_quantum	construct.py	/^    def run_quantum(self, value_aware=True):$/;"	m	class:Construct
+run_set_time	engine.py	/^    def run_set_time(self, set_time):$/;"	m	class:SimulationEngine
+set_command	construct.py	/^    def set_command(self, op_name, quantum_time, function, inputs, outputs, arguments):$/;"	m	class:Construct
+store16	memory.py	/^    def store16(self, inputs, outputs, arguments):$/;"	m	class:Memory
+store8	memory.py	/^    def store8(self, inputs, outputs, arguments):$/;"	m	class:Memory
+test_engine	test_example.py	/^    test_engine = SimulationEngine(value_aware=True)$/;"	v
+utils	memory.py	/^import utils$/;"	i
+utils	pe.py	/^import utils$/;"	i
+value_aware	pe.py	/^    value_aware = True$/;"	v
